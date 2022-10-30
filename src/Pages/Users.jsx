@@ -1,12 +1,12 @@
 import React from "react";
-import AllUsers from "./AllUsers";
+import { Users as Profiles } from "../Components";
 import Pagination from "../Components/Pagination";
 
 const Users = () => {
   return (
     <>
       <div className="app">
-        <AllUsers />
+        <Profiles />
         <Pagination />
       </div>
     </>
