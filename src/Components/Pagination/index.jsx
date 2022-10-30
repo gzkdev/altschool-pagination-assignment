@@ -11,9 +11,10 @@ const Pagination = () => {
   return (
     <div className="pagination">
       <button onClick={() => prevPage()}>prev</button>
-      {pagesz.map((num) => {
+      {pagesz.map((num, i) => {
         return (
           <button
+            key={i}
             onClick={() => handleClick(num)}
             className={num === pages ? "active" : ""}
           >

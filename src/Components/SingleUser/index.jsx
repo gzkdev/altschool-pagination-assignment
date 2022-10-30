@@ -3,13 +3,13 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 const SingleUser = () => {
-  const { cell } = useParams();
-  const url = "https://randomuser.me/api/?page=3&results=50&seed=abc";
+  const { seed } = useParams();
+  const url = `https://randomuser.me/api/?page=3&results=50&seed=abc`;
   const [details, setDetails] = useState([]);
   console.log(details);
   React.useEffect(() => {
     const FetchDetails = async () => {
-      const res = await axios.get(`${url}${cell}`);
+      const res = await axios.get(`${url}${seed}`);
       // console.log(res);
       if (res.data.results) {
         const {
@@ -26,6 +26,7 @@ const SingleUser = () => {
           last,
         };
         setDetails(newD);
+        console.log(res.data);
       } else {
         setDetails(null);
       }
