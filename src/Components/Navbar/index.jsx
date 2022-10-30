@@ -2,18 +2,15 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const navLinkStyles = ({ isActive }) => {
-    return {
-      fontWeight: isActive ? "bold" : "normal",
-      textDecoration: isActive ? "none" : "underline",
-    };
-  };
+  const navLinkStyles = ({ isActive }) => ({
+    backgroundColor: isActive ? "#ebebeb" : "#fff",
+  });
   return (
-    <nav>
-      <NavLink style={navLinkStyles} to="/">
+    <nav className="navbox">
+      <NavLink style={navLinkStyles} className="navlink" to="/" end>
         Home
       </NavLink>
-      <NavLink style={navLinkStyles} to="/users">
+      <NavLink style={navLinkStyles} className="navlink" to="/users" end>
         User
       </NavLink>
     </nav>

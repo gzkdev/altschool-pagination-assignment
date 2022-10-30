@@ -1,0 +1,21 @@
+.navbox {
+  padding: 4px;
+  margin: 0 auto;
+  position: sticky;
+  top: 40px;
+  z-index: 10;
+  background-color: #fff;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border-radius: 64px;
+}
+
+.navlink {
+  display: inline-block;
+  min-width: 100px;
+  padding: 4px 8px;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #fff;
+}
