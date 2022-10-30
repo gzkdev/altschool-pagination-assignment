@@ -1,5 +1,5 @@
-import React from "react";
 import { useGlobalContext } from "../../Store/Context";
+import "./Pagination.css";
 
 const Pagination = () => {
   const { totalPages, handleClick, nextPage, prevPage, pages, loading } =
@@ -9,7 +9,7 @@ const Pagination = () => {
     return <h1>Loading...</h1>;
   }
   return (
-    <div className="page-btn">
+    <div className="pagination">
       <button onClick={() => prevPage()}>prev</button>
       {pagesz.map((num) => {
         return (

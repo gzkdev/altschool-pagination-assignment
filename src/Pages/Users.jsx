@@ -1,6 +1,4 @@
-import React from "react";
-import { Users as Profiles } from "../Components";
-import Pagination from "../Components/Pagination";
+import { Users as Profiles, Pagination } from "../Components";
 
 const Users = () => {
   return (

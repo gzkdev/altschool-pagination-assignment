@@ -1,0 +1,19 @@
+.pagination {
+  width: fit-content;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  opacity: 0.8;
+}

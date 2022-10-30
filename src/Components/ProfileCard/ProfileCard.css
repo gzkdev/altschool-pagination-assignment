@@ -1,6 +1,6 @@
 .profiles {
   --cols: 1;
-  padding: 20vh 1rem;
+  padding: 8vh 1rem 40px;
   width: 100%;
   max-width: 1000px;
   display: grid;
