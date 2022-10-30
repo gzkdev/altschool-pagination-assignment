@@ -11,7 +11,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink style={navLinkStyles} className="navlink" to="/users" end>
-        User
+        Users
       </NavLink>
     </nav>
   );
