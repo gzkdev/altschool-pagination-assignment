@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import ErrorBoundary from "./Components/ErrorBoundary";
-import Home from "./Components/Home";
+import { ErrorBoundary } from "./Components";
+import Home from "./Pages/Home";
 import SingleUser from "./Components/SingleUser";
-import Users from "./Components/Users";
+import Users from "./Pages/Users";
 import { ErrorPage } from "./ErrorPage";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./Components";
 
 function App() {
   return (
@@ -15,7 +15,6 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="users" element={<Users />}></Route>
           <Route path="users/:cell" element={<SingleUser />}></Route>
-
           <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
       </ErrorBoundary>

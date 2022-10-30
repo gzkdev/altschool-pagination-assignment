@@ -1,10 +1,9 @@
 import React from "react";
-import { useGlobalContext } from "./Context";
-import People from "./People";
+import { useGlobalContext } from "../Store/Context";
+import People from "../Components/People";
 
 const AllUsers = () => {
   const { users, pages, postsPerPage } = useGlobalContext();
-  // console.log(users);
 
   const startIndex = (pages - 1) * postsPerPage;
   const seletedUsers = users.slice(startIndex, startIndex + postsPerPage);

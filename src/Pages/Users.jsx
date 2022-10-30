@@ -1,6 +1,6 @@
 import React from "react";
 import AllUsers from "./AllUsers";
-import Pagination from "./Pagination";
+import Pagination from "../Components/Pagination";
 
 const Users = () => {
   return (

@@ -1,7 +1,7 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
-export const Navbar = () => {
+const Navbar = () => {
   const navLinkStyles = ({ isActive }) => {
     return {
       fontWeight: isActive ? "bold" : "normal",
@@ -19,3 +19,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;

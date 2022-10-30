@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "./Context";
+import { useGlobalContext } from "../../Store/Context";
 
 const Pagination = () => {
   const { totalPages, handleClick, nextPage, prevPage, pages, loading } =
